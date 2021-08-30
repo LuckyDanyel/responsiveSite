@@ -44,4 +44,9 @@
             font-family: 'RobotoBold';
             color: $colorLink;
       }
+      @media (max-width: 960px) {
+            &__menu {
+                  display: none;
+            }
+      }
 }

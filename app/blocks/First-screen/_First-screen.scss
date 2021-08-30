@@ -1,8 +1,226 @@
 .first-screen {
-
+      padding-top: 120px;
+      background-color: $bgColor;
+      min-height: 660px;
+      overflow: hidden;
+      padding-bottom: 4%;
 
       &__wrapper {
+            display: flex;
+            justify-content: space-between;
+      }
+      &__title {
+            margin-right: 50px;
+            max-width: 530px;
+      }
+      &__heading {
+            max-width: 440px;
+            line-height: 1.5em;
+      }
+      &__text {
+            margin: 1.25em 0;
+            font-size:  $fn-24;
+            line-height: 1.375em;
+      }
+      &__button {
+            display: block;
+            max-width: 380px;
+            width: 100%;
+            border-radius: 0.57em; // 12px
+            margin-bottom: 2em;
+            padding: 1.1em 0;
 
+            background-color: $colorBtn;
+            color: $colorHeading;
+            font-size: $fn-21;
+            font-family: 'RobotoBold';
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: $time;
+                  &:hover {
+                        opacity: 50%;
+                  }
+            
+      }
+      &__text-bottom {
+
+            a {
+                  transition: $time;
+                  text-decoration: underline;
+                  color: $colorLinkSecond;
+
+                        &:hover {
+                              opacity: 50%;
+                  }
+            }
+      }
+      &__image {
+            position: relative;
+            height: 100%;
+            max-height: 440px;
+
+      }
+      &__image-general {
+            max-width: 635px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+
+                  img { 
+                        
+                        width: 100%;
+                        height: 100%;
+                        min-width: 350px;
+                       
+                  }
+      }
+      &__image-item {
+            width: 30%;
+            position: absolute;
+
+                
+      }
+      &__image-first {
+            right: -13%;
+            bottom: -23%;
+
+            img { 
+                  width: 100%;
+                  height: 100%;
+                  max-width: 200px;
+                  
+            }
+
+           
+      }
+      &__image-second {
+            
+            top: -20%;
+            z-index: 0;
+                  img { 
+                        width: 100%;
+                        height: 100%;
+                        max-width: 200px;
+
+                  }
+
+           
+      }
+      &__image-third{
+            width: 20%;
+            top: -11%;
+            right: -10%;
+            z-index: 1;
+
+            img { 
+                  width: 100%;
+                  height: 100%;
+                  max-width: 129px;
+
+            }
+
+      }
+      &__image-fourth{
+            width: 20%;
+            left: -8%;
+            bottom: -8%;
+            z-index: 1;
+                  
+            img { 
+                  width: 100%;
+                  height: 100%;
+                  max-width: 129px;
+
+            }
+
+          
+      }
+      &__bottom-text {
+            font-family: "RobotoBold";
+            text-transform: uppercase;
+      }
+      &__bottom {
+            max-width: 750px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+      }
+      &__bottom-image {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+                  
+                  
+      }
+
+      @media (max-width: 1200px ) {
+            &__text {
+                  @include adaptiv-font(21, 16);
+                  
+            }
+            &__heading {
+                  @include adaptiv-font(48, 24);
+                  
+            }
+            &__button {
+                  @include adaptiv-font(21, 14);
+                  
+            }
+            &__text-bottom {
+                  @include adaptiv-font(16, 12);
+            }
+            &__bottom-text {
+                  @include adaptiv-font(16, 12);
+            }
+      }
+      @media(max-width: 768px) {
+           
+            padding-top: 10%;
+            &__image {
+                  justify-self: center;
+                  max-width: 500px;
+            }
+            &__title {
+                  position: relative;
+                  z-index: 2;
+                  margin: 0;
+                  max-width: 100%;
+            }
+            &__heading {
+                  max-width: 100%;
+            }
+            &__image-general {
+                  img {
+                        min-width: 50px;
+                  }
+            }
+            &__wrapper {
+                  grid-gap: 20px;
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-template-rows: auto auto;
+            }
+            &__bottom {
+                  position: relative;
+                  z-index: 2;
+            }
+            &__bottom-image {
+                  flex-flow: wrap;
+                        img {
+                              margin: 0 10px;
+                              width: 120px;
+                        }
+                        
+            }
       }
 
 }
+
