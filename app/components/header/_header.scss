@@ -1,0 +1,47 @@
+.header {
+
+      &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 110px;
+      }
+      &__logo {
+
+      }
+      &__menu {
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+      }
+      &__item {
+            font-size: $fn-16;
+            font-family: 'RobotoRegular';
+            color: $colorHeading;
+
+            &_opactity {
+                  transition: $time;
+                  &:hover {
+                        opacity: 50%;
+                        
+                  }
+            }
+      }
+      
+      &__connect {
+            display: flex;
+            justify-content: space-between;
+            width: 140px;
+      }
+      &__registr {
+
+      }
+      &__login {
+
+      }
+      &__connect-item {
+            font-size: $fn-16;
+            font-family: 'RobotoBold';
+            color: $colorLink;
+      }
+}

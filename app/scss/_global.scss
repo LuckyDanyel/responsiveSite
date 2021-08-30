@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'mixin';
+@import 'null';
+@import 'var';
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    font-family: "RobotoBold";
+    color: $colorHeading;
+}
+h1 {
+    font-size: $fn-48;
+}
+    
+h2 {
+    font-size: $fn-32;
+}
+h4 {
+    font-size: $fn-18;
+}
+p {
+    font-family: "RobotoRegular";
+    color: $colorText;
+    line-height: 1.375em;
+}
+
+body {
+    padding: 0 15px;
+}
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
