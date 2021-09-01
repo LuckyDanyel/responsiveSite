@@ -1,0 +1,49 @@
+.list-repeat {
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   
+      display: grid;
+      grid-template-rows: 48px 12% auto 40px;
+      grid-gap: 20px;
+
+      height: 100%;
+      
+}
+.list-repeat__circle {
+      font-weight: 900;
+      font-size: 25px;
+      justify-self: center;
+      align-self: center;
+
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid black;
+      color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.list-repeat__heading {
+      text-align: center;
+
+     
+}
+.list-repeat__text {
+      align-self: start;
+      font-size: $fn-16;
+      text-align: center;
+
+     
+}
+.list-repeat__link {
+      justify-self: center;
+      align-self: start;
+
+      a{
+
+      }
+}

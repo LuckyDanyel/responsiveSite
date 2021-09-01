@@ -1,0 +1,8 @@
+section(class = "finances")
+      div(class = "container")
+            h2(class = "finances__heading") Northstar takes a holistic approach to financial wellness
+            div(class = "finances__wrapper")
+                  include ../../components/list-repeat/list-repeat.pug
+                  +listRepeat("Employees can use self-service tools to track progress and take action on their personal financial goals", "Financial tools", "1", 1, "#059482")
+                  +listRepeat("Northstar surfaces how relevant benefits can be utilized to support employees’ financial or life goals", "Total compensation tools", "2", 1, "#FFAD3D")
+                  +listRepeat("Each employee is matched with a full-time Northstar Advisor based on their goals and demographics.", "Full-time financial advisors", "3", 1, "#FA70B6")

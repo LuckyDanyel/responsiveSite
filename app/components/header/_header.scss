@@ -15,7 +15,7 @@
             justify-content: space-between;
       }
       &__item {
-            font-size: $fn-16;
+            font-size: $fn-16px;
             font-family: 'RobotoRegular';
             color: $colorHeading;
 
@@ -40,7 +40,7 @@
 
       }
       &__connect-item {
-            font-size: $fn-16;
+            font-size: $fn-16px;
             font-family: 'RobotoBold';
             color: $colorLink;
       }

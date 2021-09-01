@@ -32,3 +32,10 @@ p {
     width: 100%;
     margin: 0 auto;
 }
+
+@media (max-width: 1200px ) {
+
+         :root {  
+          @include adaptiv-font(16, 12);
+         }
+    }

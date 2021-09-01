@@ -162,24 +162,26 @@
       }
 
       @media (max-width: 1200px ) {
-            &__text {
-                  @include adaptiv-font(21, 16);
+
+           
+            // &__text {
+            //       @include adaptiv-font(21, 16);
                   
-            }
-            &__heading {
-                  @include adaptiv-font(48, 24);
+            // }
+            // &__heading {
+            //       @include adaptiv-font(48, 24);
                   
-            }
-            &__button {
-                  @include adaptiv-font(21, 14);
+            // }
+            // &__button {
+            //       @include adaptiv-font(21, 14);
                   
-            }
-            &__text-bottom {
-                  @include adaptiv-font(16, 12);
-            }
-            &__bottom-text {
-                  @include adaptiv-font(16, 12);
-            }
+            // }
+            // &__text-bottom {
+            //       @include adaptiv-font(16, 12);
+            // }
+            // &__bottom-text {
+            //       @include adaptiv-font(16, 12);
+            // }
       }
       @media(max-width: 768px) {
            
