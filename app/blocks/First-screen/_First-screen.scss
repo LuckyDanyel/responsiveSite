@@ -3,7 +3,7 @@
       background-color: $bgColor;
       min-height: 660px;
       overflow: hidden;
-      padding-bottom: 4%;
+      padding-bottom: 3.75rem; //60px root(16px)
 
       &__wrapper {
             display: flex;

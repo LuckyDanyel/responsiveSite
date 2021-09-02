@@ -1,0 +1,26 @@
+.list-procent {
+max-width: 400px;
+border-radius: 1.125rem; // 18px
+padding: 1.375rem; // 22px
+
+      &__heading {
+            
+      }
+      &__procent-wrapper { 
+           
+      }
+      &__procent {
+            font-family: "RobotoBold";
+            font-size: $fn-24;
+            color: $colorHeading;
+      }
+      &__circle {
+            width: 28px;
+            height: 28px;
+            background-color: black;
+            border-radius: 50%;
+      }
+      &__text {
+
+      }
+}
