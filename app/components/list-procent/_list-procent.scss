@@ -14,11 +14,27 @@ padding: 1.375rem; // 22px
             font-size: $fn-24;
             color: $colorHeading;
       }
-      &__circle {
+      &__container {
+            display: inline-block;
             width: 28px;
             height: 28px;
-            background-color: black;
+            position: relative;
+      }
+      &__bg-circle {
+            background-color: $colorHeading;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
+            position: absolute;
+            
+      }
+      &__circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            
+            
       }
       &__text {
 
