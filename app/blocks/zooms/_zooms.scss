@@ -1,0 +1,35 @@
+.zooms {
+    background-color: $bgColor;
+    padding: 5.3125rem 0; //85px
+        &__container{
+            padding: 0 15px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        &__main {
+
+        }
+        &__main-text {
+            font-size: $fn-24;
+            line-height: 1.333em; //32px
+        }
+        &__footer {
+            margin-top: 4.125rem; //66px
+        }
+        &__human {
+            max-width: 450px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+        }
+        &__footer-text {
+            margin: 0 7px;
+        }
+
+}
