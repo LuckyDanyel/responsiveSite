@@ -3,8 +3,10 @@ mixin listRepeat(text, heading, item, type, colorType)
             if type == 1
                   li(class = "list-repeat__circle" style = "color:" + colorType + ";" + "border-color:" + colorType) #{item}
             else
-                  li(class = "list-repeat__circle") 
-                        img(src = item)
+                  li(class = "list-repeat__circle" style = "border: none;")
+                        include ../svg/svg.pug
+                        +#{item}()
+            
             li(class = "list-repeat__heading") 
                   h4 #{heading}
             li(class = "list-repeat__text") 

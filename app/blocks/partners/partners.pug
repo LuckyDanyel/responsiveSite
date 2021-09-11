@@ -1,0 +1,23 @@
+section(class = "partners")
+    div(class = "container")
+        include ../../components/list-repeat/list-repeat.pug
+        include ../../components/svg/svg.pug
+        h2(class = "partners__heading") Your partner across the full employee experience
+        div(class = "partners__wrapper")
+            - var name = "svg-robot"
+            +listRepeat("Support new hires with 401(k) rollover and enrollment, health plan selection, and relevant benefits.", "Onboarding", name, 0, null)
+
+            - var name = "svg-money"
+            +listRepeat("Explain how ISOs, NSOs, RSUs, and ESPPs work and support decision making around vesting, exercising, and taxation.", "Equity grants", name, 0, null)
+
+            - var name = "svg-open"
+            +listRepeat("Enable confident decision-making with health plan cost comparison, HSA vs FSA strategies, and insurance choices.", "Open enrollment", name, 0, null)
+
+            - var name = "svg-team"
+            +listRepeat("Host sessions on relevant financial topics such as college savings, racial wealth gap, retirement strategies, and more.", "Team presentations", name, 0, null)
+
+            - var name = "svg-offer"
+            +listRepeat("Share the full value of total compensation including salary, equity, retirement, health plans, and perks to candidates.", "Offer letters", name, 0, null)
+
+            - var name = "svg-offboard"
+            +listRepeat("ТSupport employees leaving with changes in salary, navigating COBRA and new benefits, and transitioning to a new role.", "Offboarding", name, 0, null)

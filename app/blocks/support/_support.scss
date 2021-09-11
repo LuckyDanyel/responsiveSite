@@ -1,5 +1,5 @@
 .support {
-    padding-top: 4.5rem; //72px
+    padding: 4.5rem 0; //72px
     background-color: $bgColor;
 
     &__wrapper {
@@ -15,5 +15,11 @@
     &__heading {
         text-align: center;
         margin-bottom: 2.25em; //72px
+    }
+    &__text {
+        padding-top: 2.1875em; //35px
+        font-size: $fn-16;
+        text-align: center;
+        color: #5C9992;
     }
 }

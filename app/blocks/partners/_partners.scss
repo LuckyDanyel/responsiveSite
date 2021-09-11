@@ -1,0 +1,14 @@
+.partners {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 4.375rem 0; //70px
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px 6.25rem;
+        }
+        &__heading {
+            text-align: center;
+            margin-bottom: 1.5625em; //50px
+        }
+}
