@@ -1,4 +1,9 @@
 section(class = "support")
       div(class = "container")
-            include ../../components/list-procent/list-procent.pug
-            +listProcent(55)
+            h2(class = "support__heading") Scale employee support without scaling HR operations
+            div(class = "support__wrapper")
+                  include ../../components/list-procent/list-procent.pug
+                  +listProcent(55, "#58D1BD", "#004A43")
+                  +listProcent(68, "#44B8D9", "#004A43")
+                  +listProcent(50, "#FA70B6", "#004A43")
+                  +listProcent(70, "#FFAD3D", "#004A43")

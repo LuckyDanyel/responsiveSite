@@ -1,4 +1,4 @@
-mixin listProcent(procent)
+mixin listProcent(procent, color, bgColor)
       div(class = "list-procent")
             h4(class = "list-procnet__heading") Employees want to get more value from their benefits.
             div(class = "list-procent__wrapper")
@@ -6,7 +6,6 @@ mixin listProcent(procent)
                   div(class = "list-procent__container")
                         - var leftProcent = 90
                         - var rightProcent = 90 - ((100 - (100 - procent + 50)) * 3.6)
-                        div(class = "list-procent__bg-circle")
-                        div(class = "list-procent__circle" style = "background-image: linear-gradient" + "(" + leftProcent + "deg, red 50%, transparent 50%" + ")" + ", linear-gradient" + "(" + rightProcent + "deg, red 50%, transparent 50%);")
+                        div(class = "list-procent__circle" style = "background-image: linear-gradient" + "(" + leftProcent + "deg," + color + " 51%, transparent 50%" + ")" + ", linear-gradient" + "(" + rightProcent + "deg," + color +  " 50%, transparent 50%), linear-gradient(-90deg," + bgColor + " 50%, transparent 50%);")
 
             p(class = "list-procent__text") of employees want to be more informed about benefits.
