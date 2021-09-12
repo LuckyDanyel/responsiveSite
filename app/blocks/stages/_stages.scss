@@ -1,11 +1,19 @@
 .stages {
+    padding: 4.375rem 0;
         &__container {
             max-width: 850px;
             margin: 0 auto;
+            
+        }
+        &__wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
             grid-gap: 3rem 6.25rem; //100px
+        }
+        &__heading {
+            margin-bottom: 20px;
+            text-align: center;
         }
         &__left {
             display: flex;
@@ -32,8 +40,10 @@
             
             padding-left: 1.25em; //20px
         }
+
     @media(max-width: 660px){
-        &__container {
+
+        &__wrapper {
             grid-template-columns: 1fr;
         }
         &__left {

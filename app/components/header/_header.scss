@@ -27,6 +27,21 @@
                   }
             }
       }
+      &__burger-menu {
+            display: none;
+
+                  &:hover {
+                        cursor: pointer;
+                  }
+      }
+      &__burger-item {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background-color: $colorHeading;
+            border-radius: 10px;
+            margin-top: 4px;
+      }
       
       &__connect {
             display: flex;
@@ -44,8 +59,67 @@
             font-family: 'RobotoBold';
             color: $colorLink;
       }
+     
+      &__connect-open {
+
+      }
       @media (max-width: 960px) {
             &__menu {
+                  display: none;
+                  flex-direction: column;
+                  background-color: rgb(233, 233, 233);
+                  position: absolute;
+                  z-index: 6;
+                  top: 111px;
+                  left: 0;
+
+                  padding: 20px;
+                  width: 100%;
+                  height: 250px;
+            }
+            &__menu-open {
+                  display: flex;
+            }
+            &__burger-end {
+                  width: 30px;
+                  height: 30px;
+                  position: relative;
+                  .header__burger-item {
+                        position: absolute;
+                        top: 14px;
+                        left: 0;
+                        margin: 0;
+                        &:nth-child(1) {
+                              transform: rotate(-135deg);
+                        }
+                        &:nth-child(2) {
+                              transform: rotate(135deg);
+                        }
+                        &:nth-child(3) {
+                              display: none;
+                        }
+                  }
+            }
+            &__item {
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid white;
+                  width: 100%;
+            }
+            &__connect {
+                  display: none;
+            }
+            &__burger-menu {
+                  display: block;
+            }
+      }
+      @media (min-width: 961px) {
+            &__menu {
+                  display: flex;
+            }
+            &__connect {
+                  display: flex;
+            }
+            &__burger-menu {
                   display: none;
             }
       }

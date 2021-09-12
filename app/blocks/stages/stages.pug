@@ -3,24 +3,26 @@ include ../../components/svg/svg.pug
 section(class = "stages")
     div(class = "container")
         div(class = "stages__container")
-            div(class = "stages__left")
-                div(class = "stages__image")
-                    img(src = require('./blocks/stages/images/bg.svg'))
-            div(class = "stages__right")
-                mixin stagesItem(name, text)
-                    div(class = "stages__item")
-                        +#{name}()
-                        p(class = "stages__text") #{text}
+            h2(class = "stages__heading") Northstar supports diverse teams across all life stages
+            div(class = "stages__wrapper")
+                div(class = "stages__left")
+                    div(class = "stages__image")
+                        img(src = require('./blocks/stages/images/bg.svg'))
+                div(class = "stages__right")
+                    mixin stagesItem(name, text)
+                        div(class = "stages__item")
+                            +#{name}()
+                            p(class = "stages__text") #{text}
 
-                +stagesItem("svg-1", "Living paycheck-to-paycheck")
-                +stagesItem("svg-2", "Paying off student loans")
-                +stagesItem("svg-3", "Getting married or divorced")
-                +stagesItem("svg-4", "HavingW a baby or adopting")
-                +stagesItem("svg-5", "Buying or renovating a home")
-                +stagesItem("svg-6", "Paying for medical emergencies")
-                +stagesItem("svg-7", "Understanding taxes")
-                +stagesItem("svg-8", "Supporting aging parents")
-                +stagesItem("svg-9", "Planning for retirement")
+                    +stagesItem("svg-1", "Living paycheck-to-paycheck")
+                    +stagesItem("svg-2", "Paying off student loans")
+                    +stagesItem("svg-3", "Getting married or divorced")
+                    +stagesItem("svg-4", "HavingW a baby or adopting")
+                    +stagesItem("svg-5", "Buying or renovating a home")
+                    +stagesItem("svg-6", "Paying for medical emergencies")
+                    +stagesItem("svg-7", "Understanding taxes")
+                    +stagesItem("svg-8", "Supporting aging parents")
+                    +stagesItem("svg-9", "Planning for retirement")
 
             
            
