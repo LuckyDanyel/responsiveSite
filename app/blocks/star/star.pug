@@ -1,4 +1,6 @@
 section(class = "star")
     div(class = "star__container")
-        include ../../components/list-image/list-image.pug
-        +list-image()
+        div(class = "star__wrapper")
+            include ../../components/list-image/list-image.pug
+            +list-image(require("./blocks/star/images/1.png"))
+            +list-image(require("./blocks/star/images/2.png"))

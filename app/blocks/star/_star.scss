@@ -1,0 +1,14 @@
+.star {
+    background-color: $bgColor;
+        &__container {
+            max-width: 1045px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+            grid-gap: 35px;
+            justify-items: center;
+        }
+}
