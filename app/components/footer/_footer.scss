@@ -1,0 +1,113 @@
+.footer {
+    padding-top: 8.75rem; //140px
+    background-color: $colorHeading;
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__heading {
+            color: white;
+            
+        }
+        &__btn {
+            max-width: 300px;
+            display: inline-block;
+            padding: 1.047em 2.619em; //21px 55px
+            margin: 1.904em 0 8.095em 0; //40px 170px
+            font-size: 1.3125rem; //21px
+            font-family: "RobotoBold";
+            border-radius: 15px;
+            color: $colorHeading;
+            outline: none;
+            border: none;
+            transition: $time;
+            background-color: $colorBtn;
+
+                &:hover {
+                    opacity: 50%;
+                    cursor: pointer;
+                }
+            
+        }
+        &__down {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list-all {
+            order: 1;
+            max-width: 830px;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 60px;
+        }
+        &__list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &__item-heading {
+            color: white;
+            font-size: $fn-18;
+            font-family: "RobotoBold";
+        }
+        &__item {
+            color: #D8EBE9;
+            font-size: $fn-18;
+            font-family: "RobotoRegular";
+            margin: 1.3888em 0; //25px
+        }
+        &__left {
+            order: 0;
+            max-width: 315px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__logo {
+
+        }
+        &__text {
+            p {
+                margin: 20px 0;
+                line-height: 1em;
+                color: #D8EBE9;
+            }
+            
+        }
+        &__links {
+            svg {
+                margin-right: 15px;
+            }
+        }
+        &__image {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+    @media(max-width: 1200px) {
+        &__list-all {
+            width: 60%;
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+    @media(max-width: 760px) {
+        &__list-all {
+            
+            grid-template-columns: repeat(1, auto);
+            width: 40%;
+        }
+    }
+    @media(max-width: 510px) {
+        &__down {
+            flex-direction: column;
+            
+        }
+        &__list-all {
+            width: 100%;
+        }
+        &__left {
+            margin-bottom: 35px;
+        }
+    }
+}
